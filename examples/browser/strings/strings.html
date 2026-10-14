@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>My Page</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  
+  <body>
+    <script>
+      const name = prompt("What is your name?");
+      document.body.innerHTML += 
+        `<p>Your name is <strong>${name}</strong> <br>
+         Your name has <strong> ${name.length} </strong> characters. <br>
+         The second letter of your name is <strong> ${name[1]}. </strong> <br>
+         The index of first letter 'a' in your name is <strong>${name.indexOf('a')} </strong>. <br>
+         The last 3 letters of your name are <strong> ${name.slice(-3)}. </strong> <br>
+         Your names separeted are "${name.split(/ |-/).map(n => `<strong>${n}</strong>`).join(`", "`)}""
+        </p>`;
+    </script>
+    <br><br><br><br><br><br><br><br>
+    <h1>Welcome to My Page</h1>
+    <h2>About Me</h2>
+    <h3>My Interests</h3>
+    <h4>Hobbies</h4>
+    <h5>Favorite Books</h5>
+    <h6>Contact Information</h6>
+    <p>This is a sample HTML page.</p>
+
+  </body>
+</html>
